@@ -1,15 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
 import Navbar from './components/dashboard/Navbar'
 
-function App() {
   
-
+const App = () => {
   return (
-    <Navbar/>
-    
+
+    <div>
+      <Navbar/>
+
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/interview" element={<Question />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} >
+          </Route>
+        </Routes>
+      </BrowserRouter> */}
+    </div>
   )
 }
 
-export default App;
+export default App
