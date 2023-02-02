@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   MenuIcon,
   XIcon,
@@ -6,7 +8,7 @@ import {
   DocumentIcon,
   QuestionMarkCircleIcon,
 } from "@heroicons/react/outline";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import BarChart from "./BarChart";
 import { UserData } from "./data";
 import { Bar } from "react-chartjs-2";
@@ -45,7 +47,7 @@ export default function Navbar() {
             <h1 className="font-bold text-xl">Soham Jadiye</h1>
            
           </div>
-          <div>
+          {/* <div>
             <h1>Charts</h1>
             <ul>
               <li>Bar Chart</li>
@@ -53,7 +55,7 @@ export default function Navbar() {
               <li></li>
               <li></li>
             </ul>
-          </div>
+          </div> */}
 
         </div>
         <div className="w-full">
@@ -71,7 +73,9 @@ export default function Navbar() {
               <div className="py-10 px-4 ">
                 <ul className="flex space-x-6  ">
                   <li className=" font-semibold text-base">
-                    Attempt Interview
+                  <Link className="nav-link" to="/interview">
+                  Attempt Interview
+              </Link>
                   </li>
                   <li className="font-semibold text-base">
                     Improve Your Skills

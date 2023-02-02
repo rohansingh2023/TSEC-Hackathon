@@ -1,21 +1,33 @@
 import Navbar from './components/dashboard/Navbar'
 
+
+// import interview from './components/Interviews/Interview'
+
+
+import Question from './components/Interviews/Question';
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  
+} from "react-router-dom";
+
   
 const App = () => {
   return (
 
     <div>
-      <Navbar/>
+    
 
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/interview" element={<Question />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} >
-          </Route>
+          <Route exact path="/" element={<Navbar />} />
+          <Route exact path="/interview" element={<Question/>} />
+          
+          
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
     </div>
   )
 }
