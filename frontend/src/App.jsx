@@ -1,21 +1,24 @@
 import Navbar from './components/dashboard/Navbar'
+import { BrowserRouter, Routes, Route } from 'react-router-dom' 
+import Question from './components/Ques/Question' 
 
-  
 const App = () => {
   return (
 
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
+      
 
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/interview" element={<Question />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} >
+          <Route path="/" element={<Navbar />} />
+          {/* <Route path="/interview" element={<Interview.jsx />} > */}
+          <Route path="/interview" element={<Question />} >
+          {/* <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} > */}
           </Route>
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
     </div>
   )
 }
