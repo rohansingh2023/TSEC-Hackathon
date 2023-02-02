@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Webcam from 'react-webcam'
 import { ReactMediaRecorder } from "react-media-recorder";
-import Child from './Child';
 
 let gumStream = null;
 let recorder = null;
@@ -89,7 +88,6 @@ const Interview = () => {
 
   return (
     <>
-    {imgSrc && <Child img={imgSrc}/>}
     {console.log(imgSrc)}
     <ReactMediaRecorder
       audio
