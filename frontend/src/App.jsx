@@ -5,6 +5,7 @@ import Navbar from './components/dashboard/Navbar'
 
 import Bar from "./Bar";
 import Pie from "./Pie";
+import Line from "./Line";
 import Question from './components/Interviews/Question';
 
 import {
@@ -27,7 +28,7 @@ const App = () => {
           <Route exact path="/interview" element={<Question/>} />
           <Route exact path="/barchart" element={<Bar/>} />
           <Route exact path="/piechart" element={<Pie/>} />
-          {/* <Route exact path="/linechart" element={<Line/>} /> */}
+          <Route exact path="/linechart" element={<Line/>} />
           
           
         </Routes>
