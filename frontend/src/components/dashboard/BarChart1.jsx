@@ -5,7 +5,8 @@ import { Chart as ChartJS } from "chart.js/auto";
 function BarChart({ chartData }) {
     return(
   
-         <Bar data={chartData} />
+
+         <Bar  data={chartData} />
    
     );
 }
