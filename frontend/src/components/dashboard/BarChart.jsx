@@ -4,10 +4,9 @@ import { Chart as ChartJS } from "chart.js/auto";
 
 function BarChart({ chartData }) {
     return(
-    <div className="w-[400px] h-[400px] my-[50px] mx-[50px] ">
-
+  
          <Bar data={chartData} />
-    </div>
+   
     );
 }
 

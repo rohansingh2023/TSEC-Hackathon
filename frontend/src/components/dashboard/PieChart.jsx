@@ -4,9 +4,9 @@ import { Chart as ChartJS } from "chart.js/auto";
 
 function PieChart({ chartData }) {
   return (
-    <div className="w-[250px] h-[250px] my-[50px] mx-[130px] ">
+   
       <Pie data={chartData} />
-    </div>
+    
   );
 }
 
